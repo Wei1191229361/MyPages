@@ -36,7 +36,7 @@
 
  >row:将主轴设置为水平方向，如果diretion属性为ltr，则为从左到右排列；row-reverse 与之相反；
 
- ![](.01_flex布局_images\row.png)
+ ![png](https://raw.githubusercontent.com/Wei1191229361/wei1191229361.github.io/master/details/html%26css/.01_flex%E5%B8%83%E5%B1%80_images/baseline-1.png)
  ![](.01_flex布局_images\row-reverse.png)
 
 >column:将主轴设置垂直方向，起点终点受书写模式(writing-model)影响;column与之相反;
