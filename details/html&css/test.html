@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		.container {
+			margin: 100px;
+			display: flex;
+			width: 400px;
+			height: 200px;
+			background-color: #d1f7ff;
+			flex-wrap: nowrap;
+			flex-direction: row;
+		}
+		.container div {
+			width: 100px;
+			height: 100px;
+			/*margin: 0 10px;*/
+			background-color: rgba(224, 67, 30, 0.73);
+		}
+		.container .a {
+			flex-shrink:1;
+			background-color: #47a046;
+			transition: background 1s,transform 1.6s ;
+		}
+		.container:hover .a {
+				transform: translate3d(100px,-100px,0);
+		}
+		.container:hover .b {
+			transform: translate3d(-100px,100px,0);
+		}
+		.container .b {
+			width: 200px;
+			flex-shrink: 2;
+			background-color: #64a090;
+			transition: background 1s,transform 1.6s ;
+		}
+		.container .c {
+			width: 300px;
+			flex-shrink: 3;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class='a'>A</div>
+	<div class='b'>B</div>
+	<div class='c'>C</div>
+</div>
+<script src=../../lib/jquery-3.3.1/jquery-3.3.1.js ></script>
+<script>
+
+	console.log(window.getComputedStyle(document.getElementsByClassName('c')[0]));
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  color: #333;
+  background-color: #eeeeee;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.7);
+}
+body img {
+  width: 600px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body .myheader {
+  background-color: pink;
+  height: 200px;
+  position: relative;
+}
+body .myheader .links {
+  position: absolute;
+  bottom: 20px;
+  background-color: hotpink;
+  width: 100%;
+  height: 40px;
+}
+body .myheader .links .links-in {
+  width: 50%;
+  height: 40px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+body .container {
+  margin-top: 40px;
+  width: 70%;
+  padding-left: 35px;
+  padding-bottom: 50px;
+  background-color: #fafafa;
+}
+body .container h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0;
+}
+body .container .descibe {
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+}
+body .container pre {
+  width: 600px;
+}
+body .container .column {
+  width: auto;
+}
+body footer {
+  width: 100%;
+  height: 200px;
+  background-color: #eeeeee;
+}
+/*# sourceMappingURL=base.css.map */
