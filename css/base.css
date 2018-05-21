@@ -55,6 +55,7 @@ body .container pre {
 }
 body .container .column {
   width: auto;
+  left: 40%;
 }
 body footer {
   width: 100%;

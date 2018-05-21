@@ -7,7 +7,7 @@
 ### 二、如何使用flex布局
 &emsp;&emsp;通过将一个容器display的值设置为flex，这个容器就会变成一个**弹性容器**，即flex container。<br/>它内部的元素就会自动变为**弹性项目**，即flex item；
 
-![](.01_flex布局_images\flex-container.png)
+![](01_flex布局_images\\flex-container.png)
 
  如图中所示，主轴方向由flex-direction确定；
 
@@ -37,12 +37,12 @@
  >row:将主轴设置为水平方向，如果diretion属性为ltr，则为从左到右排列；row-reverse 与之相反；
 
  ![png](https://raw.githubusercontent.com/Wei1191229361/wei1191229361.github.io/master/details/html%26css/.01_flex%E5%B8%83%E5%B1%80_images/baseline-1.png)
- ![](.01_flex布局_images\row-reverse.png)
+ ![](01_flex布局_images\\row-reverse.png)
 
 >column:将主轴设置垂直方向，起点终点受书写模式(writing-model)影响;column与之相反;
 
-![](.01_flex布局_images\column.png)
-![](.01_flex布局_images\column-reverse.png)
+![](01_flex布局_images\\column.png)
+![](01_flex布局_images\\column-reverse.png)
 
 #### **2.flex-wrap 指定 flex元素单行显示还是多行显示**
 
@@ -52,15 +52,15 @@
 
 >nowrap:flex-items被摆放到到一行,不会换行，即使元素溢出 flex 容器；
 
-![](.01_flex布局_images\no-wrap.png)
+![](01_flex布局_images\\no-wrap.png)
 
 >wrap:flex-items会自动换行，换行后在侧轴的排列依据flex-direction；
 
-![](.01_flex布局_images\wrap.png)
+![](01_flex布局_images\\wrap.png)
 
 >wrap-reverse:和 wrap 的行为一样,会换行，但侧轴排序相反；
 
-![](.01_flex布局_images\wrap-reverse.png)
+![](01_flex布局_images\\wrap-reverse.png)
 
 #### **3.justify-content  定义了浏览器如何分配顺着父容器主轴的弹性元素之间及其周围的空间。**
         .flex-container {
@@ -69,26 +69,26 @@
 具体对齐方式与轴的方向有关。下面假设主轴为从左到右。
 >flex-start（默认值）:左对齐
 
-![](.01_flex布局_images\flex-start.png)
+![](01_flex布局_images\\flex-start.png)
 
 >flex-end:右对齐
 
-![](.01_flex布局_images\flex-end.png)
+![](01_flex布局_images\\flex-end.png)
 
 >center:居中对齐
 
-![](.01_flex布局_images\center.png)
+![](01_flex布局_images\\center.png)
 
 >space-around:在每行上均匀分配弹性元素。相邻元素间距离相同。每行第一个元素到行首的距离和每行最后一个元素到行尾的距离将会是相邻元素之间距离的一半。
 
-![](.01_flex布局_images\space-around.png)
+![](01_flex布局_images\\space-around.png)
 
 >space-between:相邻元素间距离相同。每行第一个元素与行首对齐，每行最后一个元素与行尾对齐。
 
-![](.01_flex布局_images\space-between.png)
+![](01_flex布局_images\\space-between.png)
 >space-evenly:相邻元素之间的间距，主轴起始位置到第一个元素的间距,主轴结束位置到最后一个元素的间距，都完全一样。
 
-![](.01_flex布局_images\space-evenly.png)
+![](01_flex布局_images\\space-evenly.png)
 
 #### **4.align-items 侧轴方向上当前行上的弹性元素对齐方式。这个属性设置的是每一行内部的对齐方式。与align-content属性的区别在于它指定了当前Flex容器的行中的项目的对齐方式，而align-content则指定了行自身的对齐方式。**
         .flex-container {
@@ -97,23 +97,23 @@
 
  >flex-start:侧轴的起点对齐。
 
-![](.01_flex布局_images\flex-start-1.png)
+![](01_flex布局_images\\flex-start-1.png)
 
  >flex-end:侧轴的终点对齐。
 
-![](.01_flex布局_images\flex-end-1.png)
+![](01_flex布局_images\\flex-end-1.png)
 
  >center:侧轴的中点对齐。
 
-![](.01_flex布局_images\center-1.png)
+![](01_flex布局_images\\center-1.png)
 
  >baseline:元素的第一行文字的基线对齐。
 
- ![](.01_flex布局_images\baseline-1.png)
+ ![](01_flex布局_images\\baseline-1.png)
 
  >stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
 
-  ![](.01_flex布局_images\stretch-1.png)
+  ![](01_flex布局_images\\stretch-1.png)
 
 #### **5.align-content 侧轴行的对齐方式。该属性对单行弹性盒子模型无效。**
 
@@ -123,28 +123,28 @@
 
 >flex-start:侧轴的起点对齐
 
-![](.01_flex布局_images\flex-start-2.png)
+![](01_flex布局_images\\flex-start-2.png)
 
 >flex-end:侧轴的终点对齐
 
-![](.01_flex布局_images\flex-end-2.png)
+![](01_flex布局_images\\flex-end-2.png)
 
 >center:侧轴居中对齐
 
-![](.01_flex布局_images\center-2.png)
+![](01_flex布局_images\\center-2.png)
 
 
 >space-around:相邻行间距离相同。在侧轴上第一行到侧轴起点的距离和最后一行到侧轴终点的距离将会是相邻行之间距离的一半。
 
-!![](.01_flex布局_images\space-around-2.png)
+!![](01_flex布局_images\\space-around-2.png)
 
 >space-between:相邻行间距离相同。第一行与侧轴起点对齐，最后一行与侧轴终点对齐。
 
-![](.01_flex布局_images\space-between-2.png)
+![](01_flex布局_images\\space-between-2.png)
 
 >stretch:拉伸所有行来填满剩余空间。剩余空间平均的分配给每一行。
 
-![](.01_flex布局_images\stretch-2.png)
+![](01_flex布局_images\\stretch-2.png)
 
 >### （二）、设置在flex items上的属性
 
@@ -161,7 +161,7 @@
   * B: 100+(2/(1+2+3))*(600-300)=200;
   * C: 100+(3/(1+2+3))*(600-300)=250;
 
-![](.01_flex布局_images\flex-grow.png)
+![](01_flex布局_images\\flex-grow.png)
 
 >&emsp;&emsp;如果flex-grow之和小于1,那么就会将它们的和当做1,会有剩余空间不会被分配。<br/>
 例：<br/>
@@ -170,11 +170,11 @@
   * B: 100+(0.2/1)*(600-300)=160;
   * C: 100+(0.3/1)*(600-300)=190;
 
-  ![](.01_flex布局_images\flex-grow-1.png)
+  ![](01_flex布局_images\\flex-grow-1.png)
 
 >&emsp;&emsp;flex-grow 还会受到 max-width 的影响。如果最终计算完分配空间后的结果大于 max-width 指定的值，max-width 的值将会优先使用,剩余的空间会再分配。
 
-![](.01_flex布局_images\flex-grow-3.png)
+![](01_flex布局_images\\flex-grow-3.png)
 
 
 
@@ -187,7 +187,7 @@
   * B: 200-(2\*200/(1\*100+2\*200+3\*300))*(600-400)=142.86;
   * C: 300-(3\*300/(1\*100+2\*200+3\*300))*(600-400)=171.43;
 
-![](.01_flex布局_images\flex-shrink.png)
+![](01_flex布局_images\\flex-shrink.png)
 
 >&emsp;&emsp;如果和小于1,并不会收缩所有的空间，而只会收缩 flex-shrink 之和相对于 1 的比例的溢出空间。<br/>
   例：<br/>
@@ -196,7 +196,7 @@
   * B: 200-(0.2\*200/(0.1\*100+0.2\*200+0.3\*300))*120;
   * C: 300-(0.3\*300/(0.1\*100+0.2\*200+0.3\*300))*120;
 
-![](.01_flex布局_images\flex-shrink-1.png)
+![](01_flex布局_images\\flex-shrink-1.png)
 
 >&emsp;&emsp;类似的，flex-shrink 也会受到min-width的影响；
 
@@ -212,7 +212,7 @@
 * B: 200+(2/(1+2+3))\*(600-350)=283.3;
 * C: 100+(3/(1+2+3))\*(600-350)=225;
 
-![](.01_flex布局_images\flex-basis.png)
+![](01_flex布局_images\\flex-basis.png)
 
 #### **4.flex 是简写 flex-grow, flex-shrink与flex-basis属性 默认值是0 1 auto**
 >flex 属性可以指定1个，2个或3个值。
